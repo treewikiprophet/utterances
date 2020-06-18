@@ -54,7 +54,7 @@ parcelRequire = function(e) {
         history.replaceState(void 0, document.title, location.pathname + g + location.hash)
     }
     var b = document.currentScript;
-    void 0 === b && (b = document.querySelector("script[src^=\"https://utteranc.es/client.js\"],script[src^=\"http://localhost:4000/client.js\"]"));
+    void 0 === b && (b = document.querySelector("script[src^=\"https://utteranc.es/client.js\"],script[src^=\"http://treewikiprophet.github.io/utterances/client.js\"],script[src^=\"http://localhost:4000/client.js\"]"));
     for (var a = {}, h = 0; h < b.attributes.length; h++) {
         var m = b.attributes.item(h);
         a[m.name.replace(/^data-/, "")] = m.value
