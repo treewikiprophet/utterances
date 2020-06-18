@@ -990,8 +990,8 @@ parcelRequire = function(e) {
     function Ba(e, t) {
         return new Promise(function(s) {
             var n = document.createElement("link");
-            n.rel = "stylesheet", n.setAttribute("crossorigin", "anonymous"), n.onload = s, n.href = "treewikiprophet/stylesheets/themes/" + e + "/utterances.css", document.head.appendChild(n), addEventListener("message", function(e) {
-                e.origin === t && "set-theme" === e.data.type && (n.href = "treewikiprophet/stylesheets/themes/" + e.data.theme + "/utterances.css")
+            n.rel = "stylesheet", n.setAttribute("crossorigin", "anonymous"), n.onload = s, n.href = "utterances/stylesheets/themes/" + e + "/utterances.css", document.head.appendChild(n), addEventListener("message", function(e) {
+                e.origin === t && "set-theme" === e.data.type && (n.href = "utterances/stylesheets/themes/" + e.data.theme + "/utterances.css")
             })
         })
     }
