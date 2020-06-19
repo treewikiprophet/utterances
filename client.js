@@ -75,7 +75,7 @@ parcelRequire = function(e) {
     document.head.insertAdjacentHTML("afterbegin", "<style>\n    .utterances {\n      position: relative;\n      box-sizing: border-box;\n      width: 100%;\n      max-width: 760px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n    .utterances-frame {\n      position: absolute;\n      left: 0;\n      right: 0;\n      width: 1px;\n      min-width: 100%;\n      max-width: 100%;\n      height: 100%;\n      border: 0;\n    }\n  </style>");
     var s = b.src.match(/^https:\/\/utteranc\.es|https:\/\/treewikiprophet\.github\.io\/utterances|http:\/\/localhost:\d+/)[0]
       , r = s + "/utterances.html";
-    b.insertAdjacentHTML("afterend", "<div class=\"utterances\">\n    <iframe class=\"utterances-frame\" title=\"Comments\" scrolling=\"no\" src=\"" + r + "?" + e(a) + "\"></iframe>\n  </div>");
+    b.insertAdjacentHTML("afterend", "<div class=\"utterances\" style="height: 300px;">\n    <iframe class=\"utterances-frame\" title=\"Comments\" scrolling=\"no\" src=\"" + r + "?" + e(a) + "\"></iframe>\n  </div>");
     var u = b.nextElementSibling;
     b.parentElement.removeChild(b),
     addEventListener("message", function(t) {
