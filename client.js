@@ -79,7 +79,7 @@ parcelRequire = function(e) {
     var u = b.nextElementSibling;
     b.parentElement.removeChild(b),
     addEventListener("message", function(t) {
-        if (t.origin === s) {
+        if (t.origin + "/utterances" === s) {
             var r = t.data;
             r && "resize" === r.type && r.height && (u.style.height = r.height + "px")
         }
